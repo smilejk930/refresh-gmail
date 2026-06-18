@@ -1,0 +1,21 @@
+{
+  "mode": "verify",
+  "pollIntervalMinutes": 5,
+  "pop3": {
+    "host": "pop.company.example",
+    "port": 995,
+    "security": "tls",
+    "username": "user@company.example",
+    "rejectUnauthorized": true,
+    "allowInsecurePlainAuth": false
+  },
+  "gmail": {
+    "credentialsPath": "C:\\\\path\\\\to\\\\credentials.json",
+    "labelIds": [],
+    "processForCalendar": true
+  },
+  "sync": {
+    "maxMessagesPerRun": 25,
+    "allowMissingMessageIdImport": false
+  }
+}

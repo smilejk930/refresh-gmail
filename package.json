@@ -1,0 +1,46 @@
+{
+  "name": "refresh-gmail",
+  "version": "0.1.0",
+  "description": "Windows tray app that imports POP3 mail into Gmail with a configurable polling interval.",
+  "main": "src/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "package": "electron-builder --win portable"
+  },
+  "keywords": [
+    "gmail",
+    "pop3",
+    "electron",
+    "tray"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^173.0.0"
+  },
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "local.refresh-gmail",
+    "productName": "Refresh Gmail",
+    "files": [
+      "src/**/*",
+      "package.json",
+      "README.md",
+      "SECURITY.md",
+      "config.example.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "RefreshGmail-${version}-portable.exe"
+    }
+  }
+}

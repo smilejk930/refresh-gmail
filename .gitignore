@@ -1,0 +1,15 @@
+node_modules/
+dist/
+out/
+coverage/
+*.log
+.env
+*.local
+config.json
+state.json
+secrets*.json
+*.enc.json
+credentials*.json
+client_secret*.json
+token*.json
+activity.log
