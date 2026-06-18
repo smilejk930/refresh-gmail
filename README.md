@@ -1,5 +1,7 @@
 # Refresh Gmail
 
+[한국어 README](README.ko.md)
+
 Refresh Gmail is a Windows tray app that checks a POP3 mailbox on your schedule and imports new messages into Gmail with the Gmail API. It does not depend on Gmail's built-in "Check mail from other accounts" POP fetcher.
 
 ## How It Works
